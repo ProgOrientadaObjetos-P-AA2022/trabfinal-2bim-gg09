@@ -77,14 +77,14 @@ public abstract class PlanCelular {
     
     @Override
     public String toString() {
-        String data = String.format("Propietario----------\n"
+        String data = String.format("\n-->Propietario\n"
                 + "-Nombre del propietario: %s\n"
                 + "-Cedula de identidad: %s\n"
-                + "-Ciudad de residencia: %s\n"
-                + "Informacion del teléfono Móvil-------\n"
+                + "-Ciudad de residencia: %s\n\n"
+                + "-->Informacion del teléfono Móvil\n"
                 + "-Marca: %s\n"
                 + "-Modelo: %s\n"
-                + "-Numero del teléfono: %d\n",nombre, cedula, ciudad, 
+                + "-Numero del teléfono: %d\n\n",nombre, cedula, ciudad, 
                 marca, modelo, numero);
 
         return data;

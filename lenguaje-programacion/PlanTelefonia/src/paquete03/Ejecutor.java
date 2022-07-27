@@ -50,6 +50,7 @@ public class Ejecutor {
                         planM.calcularPagoMensual();
                         
                         //c.insertarPlanMegas(planM);
+                        System.out.println(planM);
                         
                         break;
                     case 2:
@@ -71,6 +72,7 @@ public class Ejecutor {
                         planMin.calcularPagoMensual();
                         
                         //c.insertarPlanMinutos(planMin);
+                        System.out.println(planMin);
                         
                         break;
                     case 3:
@@ -90,6 +92,7 @@ public class Ejecutor {
                         planMM.calcularPagoMensual();
                         
                         //c.insertarPlanMinutosMegas(planMM);
+                        System.out.println(planMM);
                         
                         break;
                     case 4:
@@ -110,6 +113,8 @@ public class Ejecutor {
                         planMME.calcularPagoMensual();
                         
                         //c.insertarPlanMinutosMegasEc(planMME);
+                        System.out.println(planMME);
+                        
                         break;
                     default: break;
                         

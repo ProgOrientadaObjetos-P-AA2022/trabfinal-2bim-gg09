@@ -56,4 +56,20 @@ public class PlanPostPagoMinutos extends PlanCelular{
         return costMinIntern;
     }
     
+    @Override
+    public String toString() {
+        String data = String.format(super.toString() 
+                + "-->Plan PostPago Minutos\n"
+                + "-Numero minutos nacionales: %d\n"
+                + "-Costo por minuto nacional: %.2f\n"
+                + "-Numero minutos internacionales: %d\n"
+                + "-Costo por minuto internacional: %.2f\n\n"
+                + "Pago mensual: %.2f\n",
+                obtenerMinutosNacionales(),
+                obtenerCostoMinutosNacionales(),
+                obtenerMinutosInternacionales(),
+                obtenerCostoMinutosInternacionales(),
+                obtenerPagoMensual());
+        return data;
+    }
 }

@@ -40,7 +40,21 @@ public class PlanPostPagoMegas extends PlanCelular{
         return costoGB;
     }
     
-    public double establecerTarifaBase(){
+    public double obtenerTarifaBase(){
         return tarifaBase;
+    }
+    
+    @Override
+    public String toString() {
+        String data = String.format(super.toString() 
+                + "-->Plan PostPago Megas\n"
+                + "-Numero de Megas(GB): %d\n"
+                + "-Costo por Mega(GB): %.2f\n"
+                + "-Tarifa base: %.2f\n\n"
+                + "Pago mensual: %.2f\n", 
+                obtenerMegasGB(),obtenerCostoGB(),
+                obtenerTarifaBase(),
+                obtenerPagoMensual());
+        return data;
     }
 }

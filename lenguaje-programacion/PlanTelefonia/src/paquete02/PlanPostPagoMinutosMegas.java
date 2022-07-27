@@ -55,4 +55,18 @@ public class PlanPostPagoMinutosMegas extends PlanCelular{
         return costoGB;
     }
     
+    @Override
+    public String toString() {
+        String data = String.format(super.toString() 
+                + "-->Plan PostPago Minutos Megas\n"
+                + "-Numero de Minutos: %d\n"
+                + "-Costo por Minuto: %.2f\n"
+                + "-Numero de Megas(GB): %d\n"
+                + "-Costo por Mega(GB): %.2f\n\n"
+                + "Pago mensual: %.2f\n",obtenerMinutos(),
+                obtenerCostoMinutos(), obtenerMegasGB(),
+                obtenerCostoGB(), obtenerPagoMensual());
+        return data;
+    }
+    
 }
