@@ -18,7 +18,7 @@ public class Ejecutor {
         do{
             opc = obj.menu();
             if(opc < 1 || opc > 4){
-                System.out.println("Error. Ingrese una opción Válida");
+                System.out.println("Error! Ingrese una opción Válida\n");
             }else{
                 obj.sc.nextLine();
                 //Proceso
@@ -49,8 +49,8 @@ public class Ejecutor {
                                 ciudad, marca, mod, num, numgb, costo, 6.50);
                         planM.calcularPagoMensual();
                         
-                        //c.insertarPlanMegas(planM);
-                        System.out.println(planM);
+                        c.insertarPlanPostPagoMegas(planM);
+                        //System.out.println(planM);
                         
                         break;
                     case 2:
@@ -71,8 +71,8 @@ public class Ejecutor {
                                 ciudad, marca, mod, num, mn, cn, mi, ci);
                         planMin.calcularPagoMensual();
                         
-                        //c.insertarPlanMinutos(planMin);
-                        System.out.println(planMin);
+                        c.insertarPlanPostPagoMinutos(planMin);
+                        //System.out.println(planMin);
                         
                         break;
                     case 3:
@@ -91,8 +91,8 @@ public class Ejecutor {
                                 ced, ciudad, marca, mod, num, nm, cm, nGB, cGB);
                         planMM.calcularPagoMensual();
                         
-                        //c.insertarPlanMinutosMegas(planMM);
-                        System.out.println(planMM);
+                        c.insertarPlanPostPagoMinutosMegas(planMM);
+                        //System.out.println(planMM);
                         
                         break;
                     case 4:
@@ -112,8 +112,8 @@ public class Ejecutor {
                                         marca, mod, num, nm, cm, nGB, cGB, 20);
                         planMME.calcularPagoMensual();
                         
-                        //c.insertarPlanMinutosMegasEc(planMME);
-                        System.out.println(planMME);
+                        c.insertarPlanPostPagoMinutosMegasEconomico(planMME);
+                        //System.out.println(planMME);
                         
                         break;
                     default: break;
