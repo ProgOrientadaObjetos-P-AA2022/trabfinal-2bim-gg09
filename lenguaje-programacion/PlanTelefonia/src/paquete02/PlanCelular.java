@@ -13,6 +13,7 @@ public abstract class PlanCelular {
     
     public PlanCelular(String nom, String ci, String c, 
             String mar, String mod, int num){
+        
         nombre = nom;
         cedula = ci;
         ciudad = c;
