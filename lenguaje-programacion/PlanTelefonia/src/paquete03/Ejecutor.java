@@ -129,6 +129,22 @@ public class Ejecutor {
             }
         }while(continuar);
         
+        for (int i = 0; i < c.obtenerDataPlanMegas().size(); i++) {
+          System.out.printf("%s", c.obtenerDataPlanMegas().get(i));
+        }
+        
+        for (int i = 0; i < c.obtenerDataPlanMinutos().size(); i++) {
+          System.out.printf("%s", c.obtenerDataPlanMinutos().get(i));
+        }
+        
+        for (int i = 0; i < c.obtenerDataPlanMinutosMegas().size(); i++) {
+          System.out.printf("%s", c.obtenerDataPlanMinutosMegas().get(i));
+        }
+        
+        for (int i = 0; i < c.obtenerDataPlanMinutosMegasEconomico().size(); i++) {
+          System.out.printf("%s", c.obtenerDataPlanMinutosMegasEconomico().get(i));
+        }
+        
     }
     
     public int menu(){
