@@ -36,7 +36,7 @@ public class PlanPostPagoMinutosMegas extends PlanCelular{
     
     @Override
     public void calcularPagoMensual(){
-        pagoMensual = (minutos * costoMin) + (megasGB + costoGB);
+        pagoMensual = (minutos * costoMin) + (megasGB * costoGB);
     }
     
     public int obtenerMinutos(){
