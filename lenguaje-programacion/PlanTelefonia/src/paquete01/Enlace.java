@@ -277,7 +277,7 @@ public class Enlace {
                         rs.getDouble("costoMin"),
                         rs.getInt("megasGB"),
                         rs.getDouble("costoGB"),
-                        rs.getDouble("porcDesc")*100);
+                        rs.getDouble("porcDesc"));
                 planmme.calcularPagoMensual();
                 listaPMME.add(planmme);   
             }
